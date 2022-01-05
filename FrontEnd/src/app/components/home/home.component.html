@@ -1,0 +1,81 @@
+<div class="test">
+    <div>
+        <div class="card text-center">
+            <h1 class="card-header"><strong>Newly added books to our catalogue</strong></h1>
+            <form [formGroup]="formGroup" (ngSubmit)="onSearch()">
+
+                <input placeholder="Search" formControlName="search" ngModel required id="dropdown">
+                <select name="searchtype" formControlName="searchType" ngModel required id="dropdown">
+                    <option value="" selected disabled hidden>-SELECT-</option>
+                    <option>AUTHOR</option>
+                    <option>TITLE</option>
+                    <option>DESCRIPTION</option>
+
+                </select>
+                <select name="genre" formControlName="genreType" ngModel required id="dropdown">
+                    <option value="" selected disabled hidden>-SELECT-</option>
+                    <option>Adventure</option>
+                    <option>Autobiographies</option>
+                    <option>Classics</option>
+                    <option>Crime</option>
+                    <option>Graphic</option>
+                    <option>Mystery</option>
+                    <option>Fantasy</option>
+                    <option>History</option>
+                    <option>Fiction</option>
+                    <option>Horror</option>
+                    <option>Romance</option>
+                    <option>Thrillers</option>
+                    <option>Biographies</option>
+                    <option>Poetry</option>
+                    <option>Memoir</option>
+                    <option>SelfHelp</option>
+                    <option>Search in all genres</option>
+                </select>
+                <button id="dropdown" mat-raised button type="submit">Search</button>
+            </form>
+            <button id="returnButton" (click)="exitSearch()" class="btn btn-lg btn-block">Return</button>
+            <mat-card class="example-card">
+              <form >
+                <div *ngFor="let item of pageOfItems">
+                    <div class="card-border">  
+                        <mat-card-header class="card-test ">
+                            <mat-card-title class="info-book">{{item.title}}</mat-card-title>
+                            <mat-card-subtitle class="info-book">Author: {{item.authorFirstName}} {{item.authorLastName}}</mat-card-subtitle>
+                            <mat-card-subtitle class="info-book">Genre:{{item.genre}}</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image [src]= "item.imageName" id="image-style" alt="image of book">
+                        <mat-card-content class="info-book">
+                            <p>
+                                {{item.description}}
+                            </p>
+                        </mat-card-content>
+                        <button mat-raised button *ngIf="authService.isLoggedIn()" type="button" id="myBtn" (click)="requestButton(item.id)" >Make Request</button>
+                    </div>
+                    
+                </div>
+              </form>
+            </mat-card>
+            <div class="card-footer pb-0 pt-3 ">
+                <ul *ngIf="pager.pages && pager.pages.length" class="pagination center">
+                    <li [ngClass]="{disabled:pager.currentPage === 1}" class="page-item first-item">
+                        <a routerLink [queryParams]="{ page: 1 }" class="page-link">First</a>
+                    </li>
+                    <li [ngClass]="{disabled:pager.currentPage === 1}" class="page-item previous-item">
+                        <a routerLink [queryParams]="{ page: pager.currentPage - 1 }" class="page-link">Previous</a>
+                    </li>
+                    <li *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}"
+                        class="page-item number-item">
+                        <a routerLink [queryParams]="{ page: page }" class="page-link">{{page}}</a>
+                    </li>
+                    <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}" class="page-item next-item">
+                        <a routerLink [queryParams]="{ page: pager.currentPage + 1 }" class="page-link">Next</a>
+                    </li>
+                    <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}" class="page-item last-item">
+                        <a routerLink [queryParams]="{ page: pager.totalPages }" class="page-link">Last</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

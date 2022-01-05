@@ -1,0 +1,16 @@
+<div class="test">
+    <div class="card text-center">
+        <h3 class="card-header"><strong>Requests</strong></h3>
+        <mat-card class="example-card">
+            <table class="table table-hover">
+                <tr *ngFor="let request of this.service.list">
+                    <td >{{request.email}}</td>
+                    <td >{{request.firstName}} {{request.lastName}}</td>
+                    <td >{{request.bookTitle}}</td>
+                    <td><button (click)="onApprove(request.userId , request.bookId)" class="btn btn-sm btn-outline-success">approve</button></td>
+                    <td><button (click)="onReject(request.userId , request.bookId)" class="btn btn-sm btn-outline-danger">reject</button></td>
+                </tr>
+            </table>
+        </mat-card>
+    </div>
+</div>

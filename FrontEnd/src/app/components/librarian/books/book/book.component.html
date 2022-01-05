@@ -1,0 +1,77 @@
+<form enctype="multipart/form-data" #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+    <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">
+    <div class="form-group">
+        <label class="field">Title</label>
+        <input placeholder="Harry Potter" name="title" #title="ngModel" [(ngModel)]="service.formData.title" class="form-control" required>
+    </div>
+    <p></p>
+    <div class="form-group">
+        <label  class="field">Description</label>
+        <input placeholder="Say something about the book ... " name="description" #description="ngModel" [(ngModel)]="service.formData.description" class="form-control"
+            maxlength="300" required>
+    </div>
+    <p></p>
+    <div class="form-group">
+        <label  class="field">Quantity</label>
+        <input placeholder="50" type="number" min="1" name="quantity" #quantity="ngModel" [(ngModel)]="service.formData.quantity" class="form-control"
+            required maxlength="5">
+    </div>
+    <p></p>
+    <div class="form-row" id="div">
+        <div class="form-group col-md-6">
+            <label  class="field">Author First Name</label>
+            <input  id="bookinfo" placeholder="J.K" name="authorFirstName" #authorFirstName="ngModel" [(ngModel)]="service.formData.authorFirstName"
+                class="form-control" minlength="2" maxlength="40" required>
+        </div>
+        <p></p>
+        <div class="form-group col-md-6">
+            <label  class="field">Author Last Name</label>
+            <input placeholder="Rowling" name="authorLastName" #authorLastName="ngModel" [(ngModel)]="service.formData.authorLastName"
+                class="form-control" minlength="2" maxlength="40" required>
+        </div>
+        <p></p>
+        <div class="form-group  col-md-6" >
+            <label  class="field">Genre </label>
+            <select name="genre" #Genre="ngModel" [(ngModel)]="service.formData.genre" class="form-control">
+                <option value="" selected disabled hidden>-SELECT-</option>
+                <option>Adventure</option>
+                <option>Autobiographies</option>
+                <option>Classics</option>
+                <option>Crime</option>
+                <option>Graphic</option>
+                <option>Mystery</option>
+                <option>Fantasy</option>
+                <option>History</option>
+                <option>Fiction</option>
+                <option>Horror</option>
+                <option>Romance</option>
+                <option>Thrillers</option>
+                <option>Biographies</option>
+                <option>Poetry</option>
+                <option>Memoir</option>
+                <option>SelfHelp</option>
+            </select>
+        </div>
+        <p></p>
+    </div>
+    <p>
+    </p>
+    <div class="form-row" id="div">
+        <div>
+            <label class="field">Book Cover</label>
+            <input type="file" name="img" accept="image/*" name="imageName"
+            class="form-control" (change)="onSelectFile($event)" id="imgInp" required>
+        </div>
+        <div id="image">
+            <img id="img" [src]="shownImage" image [src]= "service.formData.imageName" height="200" 
+            class="form-control">  <br/>
+        </div>
+    </div>
+    <p></p>
+    <div class="form-group" id="frm">
+        <button id="sub" type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block">CREATE</button>
+    </div>
+</form>
+<div id="frm">
+    <button id="clearButton" (click)="Clear()" class="btn btn-lg btn-block">CLEAR</button>
+</div>

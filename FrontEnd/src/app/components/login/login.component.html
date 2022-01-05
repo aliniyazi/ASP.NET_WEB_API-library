@@ -1,0 +1,20 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div" class="backgroundImage login-card">
+  <mat-card fxFlex="25">
+    <mat-toolbar color="primary">Login Page</mat-toolbar>
+    <div id="warning">Invalid Email or Password</div>
+      <form fxLayoutAlign="stretch" fxLayout="column" class="login-form" [formGroup]="formGroup" 
+      (ngSubmit)="LoginProces()">
+          <mat-form-field>
+            <input matInput placeholder="Email" formControlName="email" ngModel email="true" required>
+          </mat-form-field>
+          <mat-form-field>
+              <input matInput type="password" placeholder="Password" formControlName="password" minlength="10" required>
+            </mat-form-field>
+            <button mat-raised button type="submit">Login</button>
+        </form>
+        <div>
+          <a style="text-align:center;" routerLink="/forgot-password">Forgot Password ? </a>
+          <a style="padding-left: 35%;" routerLink="/registration">No Account? Create One !  </a>
+        </div>
+  </mat-card>
+</div>

@@ -1,0 +1,12 @@
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Common\bin\Debug\net5.0\API.Common.deps.json
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Common\bin\Debug\net5.0\API.Common.dll
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Common\bin\Debug\net5.0\ref\API.Common.dll
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Common\bin\Debug\net5.0\API.Common.pdb
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Common\obj\Debug\net5.0\API.Common.csprojAssemblyReference.cache
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Common\obj\Debug\net5.0\API.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Common\obj\Debug\net5.0\API.Common.AssemblyInfoInputs.cache
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Common\obj\Debug\net5.0\API.Common.AssemblyInfo.cs
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Common\obj\Debug\net5.0\API.Common.csproj.CoreCompileInputs.cache
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Common\obj\Debug\net5.0\API.Common.dll
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Common\obj\Debug\net5.0\ref\API.Common.dll
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Common\obj\Debug\net5.0\API.Common.pdb

@@ -1,0 +1,78 @@
+.header-clean{
+  display: flex;
+  justify-content: space-between;
+  padding:10px 0;   
+  background-color:white;
+  border-bottom: 1px solid;
+  color:#3d7cbb;
+  padding: 1rem;
+  margin: 0;
+  font-size: xx-large;
+  font-family: 'Brush Script MT', cursive;	
+  margin: 0;
+}
+
+.main-title a {
+  font-size: xx-large;
+  font-family: 'Brush Script MT', cursive;	
+  color: rgb(41, 78, 146);
+}
+
+.logout, .dropbtn {
+  border-radius: 5px;
+  border-color: rgb(40, 84, 167);
+  color: rgb(40, 84, 167);
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  font-family: poppins;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: none;
+  position: absolute;
+  background-color:white;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgb(40, 84, 167);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(94, 140, 224);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: cornflowerblue;}
+
+.dropbtn{
+	background-color: white;
+	font-size: 20px;
+}
+
+#count-books{
+  font-size: large;
+  font-family: 'Brush Script MT', cursive;	
+  color:  rgb(40, 84, 167);
+  position: absolute;
+  margin-top: 45px;
+}
+#count-users{
+  font-size: large;
+  font-family: 'Brush Script MT', cursive;	
+  color:  rgb(40, 84, 167);
+  display: inline;
+}

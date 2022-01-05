@@ -1,0 +1,15 @@
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Repositories\bin\Debug\net5.0\API.Repositories.deps.json
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Repositories\bin\Debug\net5.0\API.Repositories.dll
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Repositories\bin\Debug\net5.0\ref\API.Repositories.dll
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Repositories\bin\Debug\net5.0\API.Repositories.pdb
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Repositories\bin\Debug\net5.0\API.DataAccess.dll
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Repositories\bin\Debug\net5.0\API.DataAccess.pdb
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Repositories\obj\Debug\net5.0\API.Repositories.csprojAssemblyReference.cache
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Repositories\obj\Debug\net5.0\API.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Repositories\obj\Debug\net5.0\API.Repositories.AssemblyInfoInputs.cache
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Repositories\obj\Debug\net5.0\API.Repositories.AssemblyInfo.cs
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Repositories\obj\Debug\net5.0\API.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Repositories\obj\Debug\net5.0\API.Repositories.csproj.CopyComplete
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Repositories\obj\Debug\net5.0\API.Repositories.dll
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Repositories\obj\Debug\net5.0\ref\API.Repositories.dll
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.Repositories\obj\Debug\net5.0\API.Repositories.pdb

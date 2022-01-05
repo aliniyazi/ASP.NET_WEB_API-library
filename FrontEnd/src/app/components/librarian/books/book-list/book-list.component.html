@@ -1,0 +1,22 @@
+<div class="test">
+  <div class="card text-center">
+    <h3 class="card-header"><strong>Our Books</strong></h3>
+    <mat-card class="example-card">
+      <table class="table table-hover">
+        <tr *ngFor="let emp of service.list" id="bookInfo">
+          <td (click)="populateForm(emp)">{{emp.title}}</td>
+          <td (click)="populateForm(emp)">{{emp.authorFirstName}} {{emp.authorLastName}}</td>
+          <td (click)="populateForm(emp)">{{emp.genre}}</td>
+          <td><button (click)="onDelete(emp.id)" class="btn btn-sm btn-outline-danger">X</button></td>
+        </tr>
+      </table>
+    </mat-card>
+    <div style="text-align:center;">
+      <button id="style" class="stripe" (click)="firstButton()">First</button>
+      <button id="style" class="stripe" (click)="previousButton()">Previous</button>
+      <button id="currentPage" class="stripe">1</button>
+      <button id="style" class="stripe" (click)="nextButton()">Next</button>
+      <button id="style" class="stripe" (click)="lastButton()">Last</button>
+    </div>
+  </div>
+</div>

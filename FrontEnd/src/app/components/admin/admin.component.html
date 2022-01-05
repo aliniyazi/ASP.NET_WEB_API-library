@@ -1,0 +1,183 @@
+<div class="container p-3">
+  <div class="offset-3 col-6">
+    <div class="card">
+      <div class="card-header  font-weight-bold">
+        Register Librarian Form
+      </div>
+      <div class="card card-body">
+        <form [formGroup]="frmSignup" (submit)="submit()">
+          <div class="form-group">
+            <label for="email" [ngClass]="frmSignup.controls['email'].invalid ? 'text-danger' : ''">Email
+              Address</label>
+            <input id="email" formControlName="email" type="email" class="form-control"
+              placeholder="ex.georgi123@gmail.com" [ngClass]="frmSignup.controls['email'].invalid ? 'is-invalid' : ''">
+            <label class="text-danger" *ngIf="frmSignup.controls['email'].hasError('required')">
+              Email is Required!
+            </label>
+            <label class="text-danger" *ngIf="frmSignup.controls['email'].hasError('email')">
+              Enter a valid email address!
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="password"
+              [ngClass]="frmSignup.controls['password'].invalid ? 'text-danger' : ''">Password:</label>
+            <input id="password" formControlName="password" type="password" class="form-control"
+              placeholder="ex.123456789Aa!" [ngClass]="frmSignup.controls['password'].invalid ? 'is-invalid' : ''">
+            <!-- <label class="text-danger col" *ngIf="frmSignup.controls['password'].hasError('required')">
+                Password is Required!
+              </label> -->
+            <p>
+              <label class="col"
+                [ngClass]="frmSignup.controls['password'].hasError('required') || frmSignup.controls['password'].hasError('minlength')  ? 'text-danger' : 'text-success'">
+                <i class="material-icons">{{ frmSignup.controls['password'].hasError('required') ||
+                  frmSignup.controls['password'].hasError('minlength') || frmSignup.controls['password'].hasError('maxlength') ? 'cancel' :
+                  'check_circle' }}</i>
+                Must be minimum 10 characters!
+              </label>
+            </p>
+            <p>
+              <label class="col"
+                [ngClass]="frmSignup.controls['password'].hasError('required') || frmSignup.controls['password'].hasError('hasNumber')  ? 'text-danger' : 'text-success'">
+                <i class="material-icons">{{ frmSignup.controls['password'].hasError('required') ||
+                  frmSignup.controls['password'].hasError('hasNumber') ? 'cancel' :
+                  'check_circle' }}</i>
+                Must contain at least 1 number!
+              </label>
+            </p>
+            <p>
+              <label class="col"
+                [ngClass]="frmSignup.controls['password'].hasError('required') || frmSignup.controls['password'].hasError('hasCapitalCase')  ? 'text-danger' : 'text-success'">
+                <i class="material-icons">{{ frmSignup.controls['password'].hasError('required') ||
+                  frmSignup.controls['password'].hasError('hasCapitalCase') ? 'cancel' :
+                  'check_circle' }}</i>
+                Must contain at least 1 in Capital Case!
+              </label>
+            </p>
+            <p>
+              <label class="col"
+                [ngClass]="frmSignup.controls['password'].hasError('required') || frmSignup.controls['password'].hasError('hasSmallCase')  ? 'text-danger' : 'text-success'">
+                <i class="material-icons">{{ frmSignup.controls['password'].hasError('required') ||
+                  frmSignup.controls['password'].hasError('hasSmallCase') ? 'cancel' :
+                  'check_circle' }}</i>
+                Must contain at least 1 Letter in Small Case!
+              </label>
+            </p>
+            <p>
+              <label class="col"
+                [ngClass]="frmSignup.controls['password'].hasError('required') || frmSignup.controls['password'].hasError('hasSpecialCharacters') ? 'text-danger' : 'text-success'">
+                <i class="material-icons">{{ frmSignup.controls['password'].hasError('required') ||
+                  frmSignup.controls['password'].hasError('hasSpecialCharacters') ? 'cancel' :
+                  'check_circle' }}</i>
+                Must contain at least 1 Special Character!
+              </label>
+            </p>
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword"
+              [ngClass]="frmSignup.controls['confirmPassword'].invalid ? 'text-danger' : ''">Confirm
+              Password:</label>
+            <input id="confirmPassword" formControlName="confirmPassword" type="password" class="form-control"
+              placeholder="ex.123456789Aa!"
+              [ngClass]="frmSignup.controls['confirmPassword'].invalid ? 'is-invalid' : ''">
+            <label class="text-danger" *ngIf="frmSignup.controls['confirmPassword'].hasError('required')">
+              Password is Required!
+            </label>
+            <label class="text-danger" *ngIf="frmSignup.controls['confirmPassword'].hasError('NoPassswordMatch')">
+              Password do not match
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="firstname" [ngClass]="frmSignup.controls['firstname'].invalid ? 'text-danger' : ''">First
+              Name</label>
+            <input id="firstname" formControlName="firstname" type="firstname" class="form-control"
+              placeholder="ex. Georgi" [ngClass]="frmSignup.controls['firstname'].invalid ? 'is-invalid' : ''">
+          </div>
+
+          <div class="form-group">
+            <label for="lastname" [ngClass]="frmSignup.controls['lastname'].invalid ? 'text-danger' : ''">Last
+              Name</label>
+            <input id="lasttname" formControlName="lastname" type="lastname" class="form-control"
+              placeholder="ex. Nikolov" [ngClass]="frmSignup.controls['lastname'].invalid ? 'is-invalid' : ''">
+          </div>
+
+          <div class="form-group">
+            <label for="phonenumber" [ngClass]="frmSignup.controls['phonenumber'].invalid ? 'text-danger' : ''">Phone
+              Number</label>
+            <input id="phonenumber" formControlName="phonenumber" type="phonenumber" class="form-control"
+              placeholder="0879152544" [ngClass]="frmSignup.controls['phonenumber'].invalid ? 'is-invalid' : ''">
+          </div>
+
+
+          <!-- <div class="form-group">
+              <label for="country" [ngClass]="frmSignup.controls['country'].invalid ? 'text-danger' : ''">Country</label>
+              <input id="country" formControlName="country" type="country" class="form-control" [ngClass]="frmSignup.controls['country'].invalid ? 'is-invalid' : ''">
+            </div> -->
+          <!-- <mat-form-field class="form-group">
+              <mat-label>Country</mat-label >
+              <mat-select type="country" >
+                <mat-option id="country" formControlName="country" [ngClass]=(value)>
+                </mat-option>
+              </mat-select>
+            </mat-form-field> -->
+
+          <!-- <div>
+            <label>Country</label>
+            <select class="form-control" name="country" id="country">
+              <option value="">Select Country</option>
+              <option *ngFor="let country of countries" [value]="country">{{country.name}} </option>
+            </select>
+          </div> -->
+          <div class="form-group">
+            <label for="country" [ngClass]="frmSignup.controls['country'].invalid ? 'text-danger' : ''">Country</label>
+            <input id="country" formControlName="country" type="country" class="form-control"
+              [ngClass]="frmSignup.controls['country'].invalid ? 'is-invalid' : ''">
+          </div>
+
+
+
+          <div class="form-group">
+            <label for="city" [ngClass]="frmSignup.controls['city'].invalid ? 'text-danger' : ''">City</label>
+            <input id="city" formControlName="city" type="city" class="form-control"
+              [ngClass]="frmSignup.controls['city'].invalid ? 'is-invalid' : ''">
+          </div>
+
+          <div class="form-group">
+            <label for="street" [ngClass]="frmSignup.controls['street'].invalid ? 'text-danger' : ''">Street</label>
+            <input id="street" formControlName="street" type="street" class="form-control"
+              [ngClass]="frmSignup.controls['street'].invalid ? 'is-invalid' : ''">
+          </div>
+
+          <div class="form-group">
+            <label for="streetnumber" [ngClass]="frmSignup.controls['streetnumber'].invalid ? 'text-danger' : ''">Street Number</label>
+            <input id="streetnumber" formControlName="streetnumber" type="streetnumber" class="form-control"
+              [ngClass]="frmSignup.controls['streetnumber'].invalid ? 'is-invalid' : ''">
+          </div>
+
+          <div class="form-group">
+            <label for="buildingnumber" [ngClass]="frmSignup.controls['buildingnumber'].invalid ? 'text-danger' : ''">Building Number (Optional:)</label>
+            <input id="buildingnumber" formControlName="buildingnumber" type="buildingnumber" class="form-control"
+            [ngClass]="frmSignup.controls['buildingnumber'].invalid ? 'text-danger' : ''">
+          </div>
+
+          <div class="form-group">
+            <label for="apartmentnumber" [ngClass]="frmSignup.controls['apartmentnumber'].invalid ? 'text-danger' : ''">Apartment Number (Optional:)</label>
+            <input id="apartmentnumber" formControlName="apartmentnumber" type="apartmentnumber" class="form-control"
+            [ngClass]="frmSignup.controls['apartmentnumber'].invalid ? 'text-danger' : ''">
+          </div>
+
+          <div class="form-group">
+            <label for="aditionalinfo" [ngClass]="frmSignup.controls['aditionalinfo'].invalid ? 'text-danger' : ''"> Do you want to share something else? (Optional:)</label>
+            <input id="aditionalinfo" formControlName="aditionalinfo" type="aditionalinfo" class="form-control"
+            [ngClass]="frmSignup.controls['aditionalinfo'].invalid ? 'text-danger' : ''">
+          </div>
+
+          <div class="form-group">
+            <button [disabled]="frmSignup.invalid" type="submit" class="btn btn-primary btn-block font-weight-bold">Sign
+              up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

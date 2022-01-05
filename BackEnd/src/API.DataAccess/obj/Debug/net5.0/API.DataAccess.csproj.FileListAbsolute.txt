@@ -1,0 +1,15 @@
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.DataAccess\bin\Debug\net5.0\API.DataAccess.deps.json
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.DataAccess\bin\Debug\net5.0\API.DataAccess.runtimeconfig.json
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.DataAccess\bin\Debug\net5.0\API.DataAccess.runtimeconfig.dev.json
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.DataAccess\bin\Debug\net5.0\API.DataAccess.dll
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.DataAccess\bin\Debug\net5.0\ref\API.DataAccess.dll
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.DataAccess\bin\Debug\net5.0\API.DataAccess.pdb
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.DataAccess\obj\Debug\net5.0\API.DataAccess.csprojAssemblyReference.cache
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.DataAccess\obj\Debug\net5.0\API.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.DataAccess\obj\Debug\net5.0\API.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.DataAccess\obj\Debug\net5.0\API.DataAccess.AssemblyInfo.cs
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.DataAccess\obj\Debug\net5.0\API.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.DataAccess\obj\Debug\net5.0\API.DataAccess.dll
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.DataAccess\obj\Debug\net5.0\ref\API.DataAccess.dll
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.DataAccess\obj\Debug\net5.0\API.DataAccess.pdb
+C:\Users\Ali\Desktop\SideBar\BackEnd\src\API.DataAccess\obj\Debug\net5.0\API.DataAccess.genruntimeconfig.cache

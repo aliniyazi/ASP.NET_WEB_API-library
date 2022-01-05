@@ -1,0 +1,18 @@
+<div class="header-clean">
+    <h1 class="main-title">
+        <a routerLink="/">{{appTitle}}</a>
+    </h1>
+    <div id="count-books">We offer {{countAllBooks}} books for our customers in {{countAllGenres}} genres</div>
+    <div id="count-users">We have {{countAllUsers}} readers using our services
+        <div class="dropdown">
+            <button class="dropbtn">Account</button>
+            <div class="dropdown-content">
+                <a routerLink="/login">Sign in</a>
+                <a routerLink="/registration">Create account</a>
+                <a *ngIf="isLoggedIn()" routerLink="/admin">Personal page</a>
+                <a *ngIf="isLoggedIn()" routerLink="/reset-password">Change Password</a>
+            </div>
+        </div>
+        <button *ngIf="isLoggedIn()" (click)="Logout()" class="logout">LogOut</button>
+    </div>   
+</div>

@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\API",
+    "\\src\\API.DataAccess",
+    "\\src\\API.DataAccess\\DBModels",
+    "\\src\\API.Repositories",
+    "\\src\\API\\Controllers",
+    "\\src\\API\\Helpers",
+    "\\src\\API\\obj",
+    "\\src\\API\\Properties"
+  ],
+  "SelectedNode": "\\src\\API\\Controllers\\UserController.cs",
+  "PreviewInSolutionExplorer": false
+}

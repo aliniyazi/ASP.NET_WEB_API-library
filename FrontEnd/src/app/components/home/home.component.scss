@@ -1,0 +1,77 @@
+.center {
+	justify-content: center;
+}
+
+.test{
+	margin-top: 120px;
+	margin-bottom: 120px;
+	margin-left: 300px;
+	margin-right: 300px;
+	position: relative;
+	background-position: center center;
+	background-size: cover;
+}
+.card-header{
+	color: rgb(29, 41, 150);
+}
+
+.test h1{
+     font-size: xx-large;
+     font-family: 'Brush Script MT', cursive;
+ }
+ 
+mat-card img{
+	object-fit: flex; /*this makes the image in src fit to the size specified below*/
+	width: 10%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+	height: 10%;
+}
+
+.card-test{
+	margin-top: 10px;
+}
+
+.card-border{
+	margin-top: 10px;
+	border-top: 1px solid #bbb;
+}
+.info-book{
+	color: rgb(29, 41, 150);
+}
+#image-style{
+	border-radius : 5px;
+}
+#dropdown {
+	position: relative;
+	display: inline-block;
+	background-color: #f9f9f9;
+	border-radius : 4px;
+	color: rgb(40, 84, 167);
+	border-color: rgb(40, 84, 167);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+  }
+  #returnButton{
+	background-color: #f5f5f5; /* Green */
+	border: none;
+	color: rgb(40, 84, 167);
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	display: inline-block;
+	font-size: 24px;
+  }
+  
+  #myBtn{
+    background-color: cornflowerblue;
+    min-width: 160px;
+	border-radius : 4px;
+	color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+
+  };
+  

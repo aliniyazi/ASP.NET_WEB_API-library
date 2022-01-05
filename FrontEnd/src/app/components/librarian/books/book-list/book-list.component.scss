@@ -1,0 +1,63 @@
+body { text-align: center; padding: 150px; }
+  h1 { font-size: 50px; }
+  body { font: 20px Helvetica, sans-serif; color: #333; }
+  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
+  a { color: #dc8100; text-decoration: none; }
+  a:hover { color: #333; text-decoration: none; }
+
+  .pagination{
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  }
+
+  #style {
+  position: center;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 10px 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  outline: none;
+  border: none;
+}
+#currentPage{
+  position: center;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 10px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  outline: none;
+  border: none;
+}
+
+.stripe {
+  border-radius: 0px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-image: repeating-linear-gradient(90deg, 
+    rgba(20, 25, 25, 0.6),
+    rgba(25, 25, 25, 0.6) 10%, 
+    #4c4c4c 10%, #4c4c4c 20%);
+  background-size: 100%;
+  transition: background 0.3s ease-in-out;
+}
+
+.stripe:hover {
+  background-position: 150px;
+}
+#bookInfo{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+.card-header{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+
+
